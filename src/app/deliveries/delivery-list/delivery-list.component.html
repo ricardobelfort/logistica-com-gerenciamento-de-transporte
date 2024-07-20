@@ -1,0 +1,9 @@
+<p>delivery-list works!</p>
+
+<ul>
+  @for (delivery of deliveries$ | async; track delivery.id) {
+    <li>Motorista: {{ delivery.motorista.nome }}</li>
+    <li>Documento: {{ delivery.documento }}</li>
+    <hr />
+  }
+</ul>
