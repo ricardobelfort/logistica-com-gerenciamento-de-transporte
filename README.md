@@ -1,9 +1,12 @@
-# Logistica App
+# 📦 Logistic App
 
 [![DeepScan grade](https://deepscan.io/api/teams/20752/projects/27610/branches/884464/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=20752&pid=27610&bid=884464)
 ![image](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
 ![image](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![image](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![image](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+
+## 🎯 Sobre
 
 - Projeto: Desafio Front-end - Logística com gerenciamento de transport
 
@@ -11,7 +14,7 @@
 
 - Visite o projeto aqui: [Logistic App](https://logistica-com-gerenciamento-de-transporte.vercel.app/dashboard)
 
-## Branches
+## 🔗 Branches
 - [main](https://github.com/ricardobelfort/logistica-com-gerenciamento-de-transporte/tree/main): contém as últimas alterações de código
 
 ## Tecnologias
@@ -37,7 +40,7 @@ Página principal com a lista de entregas:
   <img src="./docs/entregas.png" alt="Deliveries Page" width="100%">
 </p>
 
-## Rodando o projeto localmente
+## 🚀 Rodando o projeto localmente
 
 É necessário ter o Node.js / NPM instalados localmente.
 
@@ -61,6 +64,6 @@ Abra seu navegador e acesse **http://localhost:4200** (porta padrão do Angular)
 ng test
 ```
 
-## Sobre
-
 Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+
+Desenvolvido com ❤️ por [Ricardo Belfort]
