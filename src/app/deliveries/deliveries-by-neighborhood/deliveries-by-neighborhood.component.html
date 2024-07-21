@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Entregas por Bairro</h1>
+  <table id="deliveries">
+    <tr>
+      <th>Bairros</th>
+      <th>Total de Entregas</th>
+    </tr>
+    <tr *ngFor="let bairro of entregasPorBairro | keyvalue">
+      <td>{{ bairro.key }}</td>
+      <td>{{ bairro.value }}</td>
+    </tr>
+  </table>
+</div>

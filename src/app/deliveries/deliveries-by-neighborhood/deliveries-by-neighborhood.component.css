@@ -1,0 +1,30 @@
+.container {
+  padding: 2rem;
+}
+
+#deliveries {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#deliveries td,
+#deliveries th {
+  border: 0;
+  padding: 8px;
+}
+
+#deliveries tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#deliveries tr:hover {
+  background-color: #ddd;
+}
+
+#deliveries th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
