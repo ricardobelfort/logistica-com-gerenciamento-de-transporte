@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Entregas em Andamento</h1>
+  <table id="deliveries">
+    <tr>
+      <th>Nome Motorista</th>
+      <th>Total Entregas</th>
+      <th>Entregas realizadas</th>
+    </tr>
+    <tr *ngFor="let motorista of resumoMotoristas">
+      <td>{{ motorista.nome }}</td>
+      <td>{{ motorista.totalEntregas }}</td>
+      <td>{{ motorista.entregasRealizadas }}</td>
+    </tr>
+  </table>
+</div>
