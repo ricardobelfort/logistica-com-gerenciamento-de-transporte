@@ -1,9 +1,67 @@
-<p>delivery-list works!</p>
-
-<ul>
-  @for (delivery of deliveries$ | async; track delivery.id) {
-    <li>Motorista: {{ delivery.motorista.nome }}</li>
-    <li>Documento: {{ delivery.documento }}</li>
-    <hr />
-  }
-</ul>
+<div class="container">
+  <p-card header="Entregas">
+    <ng-container *ngIf="deliveries$ | async as data">
+      <p-table
+        #dt2
+        [value]="data"
+        [paginator]="true"
+        [rows]="10"
+        styleClass="p-datatable-striped"
+        [tableStyle]="{ 'min-width': '50rem' }"
+        [rowsPerPageOptions]="[5, 10, 20]"
+        [globalFilterFields]="['motorista.nome', 'status_entrega']"
+      >
+        <ng-template pTemplate="caption">
+          <div class="flex align-content-end">
+            <p-iconField iconPosition="left" class="ml-auto">
+              <p-inputIcon>
+                <i class="pi pi-search"></i>
+              </p-inputIcon>
+              <input
+                pInputText
+                type="text"
+                (input)="
+                  dt2.filterGlobal($any($event.target).value, 'contains')
+                "
+                placeholder="Pesquise por palavra"
+              />
+            </p-iconField>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="header">
+          <tr>
+            <th>#</th>
+            <th>Documento</th>
+            <th pSortableColumn="motorista.nome">
+              Motorista <p-sortIcon field="motorista.nome" />
+            </th>
+            <th pSortableColumn="cliente_origem.bairro">
+              Origem <p-sortIcon field="cliente_origem.bairro" />
+            </th>
+            <th pSortableColumn="cliente_destino.bairro">
+              Destino <p-sortIcon field="cliente_destino.bairro" />
+            </th>
+            <th pSortableColumn="status_entrega">
+              Status de Entrega <p-sortIcon field="status_entrega" />
+            </th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-data>
+          <tr>
+            <td>{{ data.id }}</td>
+            <td>{{ data.documento }}</td>
+            <td>{{ data.motorista.nome }}</td>
+            <td>{{ data.cliente_origem.bairro }}</td>
+            <td>{{ data.cliente_destino.bairro }}</td>
+            <td>
+              <p-tag
+                [value]="data.status_entrega"
+                [severity]="getSeverity(data.status_entrega)"
+              />
+            </td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </ng-container>
+  </p-card>
+</div>
