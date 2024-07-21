@@ -5,10 +5,11 @@
 ![image](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![image](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 
-Projeto: Desafio Front-end - Logística com gerenciamento de transport
-Objetivo: Este projeto é uma solução para o desafio de desenvolvimento front-end focado em logística e gerenciamento de transporte. O objetivo principal é criar uma interface intuitiva e eficiente que permita aos usuários acompanhar as entregas de uma transportadora de maneira fácil e confiável.
+- Projeto: Desafio Front-end - Logística com gerenciamento de transport
 
-Visite o projeto aqui: [Movie Catalog](https://logistica-com-gerenciamento-de-transporte.vercel.app/dashboard)
+- Objetivo: Este projeto é uma solução para o desafio de desenvolvimento front-end focado em logística e gerenciamento de transporte. O objetivo principal é criar uma interface intuitiva e eficiente que permita aos usuários acompanhar as entregas de uma transportadora de maneira fácil e confiável.
+
+- Visite o projeto aqui: [Logistic App](https://logistica-com-gerenciamento-de-transporte.vercel.app/dashboard)
 
 ## Branches
 - [main](https://github.com/ricardobelfort/logistica-com-gerenciamento-de-transporte/tree/main): contém as últimas alterações de código
