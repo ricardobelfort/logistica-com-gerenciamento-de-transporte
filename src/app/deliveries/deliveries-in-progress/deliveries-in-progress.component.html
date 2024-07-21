@@ -1,15 +1,16 @@
-<div class="container">
-  <h1>Entregas em Andamento</h1>
-  <table id="deliveries">
+<p-table [value]="resumeInProgress" styleClass="p-datatable-striped">
+  <ng-template pTemplate="header">
     <tr>
       <th>Nome Motorista</th>
       <th>Total Entregas</th>
       <th>Entregas realizadas</th>
     </tr>
-    <tr *ngFor="let motorista of resumoMotoristas">
-      <td>{{ motorista.nome }}</td>
-      <td>{{ motorista.totalEntregas }}</td>
-      <td>{{ motorista.entregasRealizadas }}</td>
+  </ng-template>
+  <ng-template pTemplate="body" let-data>
+    <tr>
+      <td>{{ data.nome }}</td>
+      <td>{{ data.totalEntregas }}</td>
+      <td>{{ data.entregasRealizadas }}</td>
     </tr>
-  </table>
-</div>
+  </ng-template>
+</p-table>

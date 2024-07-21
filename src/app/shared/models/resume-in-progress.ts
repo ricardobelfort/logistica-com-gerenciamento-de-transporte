@@ -1,6 +1,5 @@
-export interface ResumoMotorista {
+export interface ResumeInProgress {
   nome: string;
   totalEntregas: number;
   entregasRealizadas: number;
-  entregasComInsucesso: number;
 }

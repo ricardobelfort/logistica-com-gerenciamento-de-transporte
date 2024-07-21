@@ -1,13 +1,16 @@
-<div class="container">
-  <h1>Entregas por Bairro</h1>
-  <table id="deliveries">
+<p-table [value]="deliveryStats" styleClass="p-datatable-striped">
+  <ng-template pTemplate="header">
     <tr>
-      <th>Bairros</th>
+      <th>Nome Motorista</th>
       <th>Total de Entregas</th>
+      <th>Entregas Já Realizadas</th>
     </tr>
-    <tr *ngFor="let bairro of entregasPorBairro | keyvalue">
-      <td>{{ bairro.key }}</td>
-      <td>{{ bairro.value }}</td>
+  </ng-template>
+  <ng-template pTemplate="body" let-data>
+    <tr>
+      <td>{{ data.bairro }}</td>
+      <td>{{ data.total }}</td>
+      <td>{{ data.entregues }}</td>
     </tr>
-  </table>
-</div>
+  </ng-template>
+</p-table>

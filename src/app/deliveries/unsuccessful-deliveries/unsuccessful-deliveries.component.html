@@ -1,1 +1,14 @@
-<p>unsuccessful-deliveries works!</p>
+<p-table [value]="resumeFailed" styleClass="p-datatable-striped">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>Nome Motorista</th>
+      <th>Entregas com Insucesso</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-data>
+    <tr>
+      <td>{{ data.nome }}</td>
+      <td>{{ data.entregasComInsucesso }}</td>
+    </tr>
+  </ng-template>
+</p-table>

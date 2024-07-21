@@ -1,3 +1,21 @@
 <div class="container">
-  <h1 class="mat-h1">Dashboard</h1>
+  <h1 class="mb-3">Dashboard</h1>
+
+  <div class="grid">
+    <div class="col-12 md:col-6 lg:col-4">
+      <p-card header="Entregas em Andamento">
+        <app-deliveries-in-progress></app-deliveries-in-progress>
+      </p-card>
+    </div>
+    <div class="col-12 md:col-6 lg:col-4">
+      <p-card header="Entregas com Insucesso">
+        <app-unsuccessful-deliveries></app-unsuccessful-deliveries>
+      </p-card>
+    </div>
+    <div class="col-12 md:col-6 lg:col-4">
+      <p-card header="Entregas por Bairro">
+        <app-deliveries-by-neighborhood></app-deliveries-by-neighborhood>
+      </p-card>
+    </div>
+  </div>
 </div>
